@@ -26,4 +26,14 @@ function reverse(original){
 }
 
 const sentence = prompt("Enter a sentence:");
-alert(reverse(counter(sentence)));
+
+$(document).ready(function() {
+  $("div.original").click(function() {
+    alert(sentence);
+  });
+
+  $("div.encoded").click(function() {
+    alert(reverse(counter(sentence)));
+  });
+});
+
